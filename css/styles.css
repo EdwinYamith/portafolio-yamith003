@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+
+:root {
+    --color-primario: black;
+    --color-secundario: rgb(65, 65, 65, 83, 83, 83);
+    --tamano-titulo: 32.5px;
+    --tamano-parrafo: 20px;
+  }
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background: url("../img/habilidadess.jpg");
+    width: 100%;
+    height: 100vh;
+    position: relative; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+/*boton volver*/
+.go-to-top-button {
+    position: fixed; /* Fija el botón en la pantalla */
+    bottom: 15px; /* Ajusta la distancia desde la parte inferior de la pantalla */
+    right: 15px; /* Ajusta la distancia desde la derecha de la pantalla */
+    z-index: 9; /* Asegura que esté por encima del contenido */
+    background-color: var(--color-primario); /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Quita el borde */
+    border-radius: 20px; /* Hace que el botón sea redondo */
+    padding: 8px 13px; /* Ajusta el tamaño del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/*NAVBAR*/
+
+
+
+/*inicio header*/
+
+#inicio {
+    text-align: center;
+    background: rgb(0 0 0 / 41%);
+    position: relative;
+    top: 25%;
+    border-radius: 50px;
+    padding: 5%;
+  }
+  
+#inicio h1 {
+    font-size: 45px;
+    color: white;
+  }
+  
+#inicio h2.typing-animation {
+    font-size: var(--tamano-parrafo);
+    color: white;
+    overflow: hidden; /* Evita que el texto se desborde */
+    white-space: nowrap; /* Evita que el texto se rompa en múltiples líneas */
+    animation: typing 3s steps(20, end) infinite; /* Ajusta la duración y el número de pasos */
+  }
+
+  h2.typing-animation span {
+    transform: translateY(20px); /* Otra opción: translateX, scaleY, etc. */
+    animation: appear 1s ease forwards;
+    font-size: var(--tamano-parrafo);
+  }
+  
+
+.social-icons img {
+   max-width: 500px; /* Tamaño máximo de los iconos sociales */
+   margin: 0 10px; 
+   width: 50px;
+   height: 50px;
+   transition: transform 0.5s;
+  }
+  
+.social-icons img:hover{
+    transform: scale(1.2);
+}
+
+.wrapper {
+    margin-top: 5%;
+  }
+  
+.wrapper button.btn.btn-primar {
+  font-family: var(--tamano-parrafo);
+  background-color: #ccc; /* Color de fondo del contenedor */
+  box-shadow: 0 0 0 5px rgb(0, 0, 0), 0 0 0 5px ; /* Contorno redondeado por dentro (rojo) y por fuera (azul) */
+  border-radius: 10px; /* Radio de borde para hacerlo redondeado */
+  
+  /* width: 20%; */
+  /* height: 10%; */
+  transition: transform 0.5s;
+    
+  }
+
+
+  
+.wrapper button.btn.btn-primar:hover {
+  background-color: #ccc; /* Color de fondo del contenedor */
+  box-shadow: 0 0 0 5px rgb(0, 0, 0), 0 0 0 5px ; /* Contorno redondeado por dentro (rojo) y por fuera (azul) */
+  border-radius: 10px; /* Radio de borde para hacerlo redondeado */
+    transform: scale(1.2); 
+    color: white;
+  }
+
+/*fin header */
+
+
+
+/* presentacion*/
+  /* Estilos para centrar texto e imagen */
+  #presentacion {
+    text-align: center;
+    padding: 5% 0 5% 0;
+
+  }
+  
+  .carruselPresentacion img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    transition: transform 0.5s; 
+    border-radius: 5%;
+  }
+
+  .carruselPresentacion img:hover{
+    transform: scale(1.2); 
+
+  }
+  
+  /* Estilos para los títulos y párrafos */
+  #presentacion h2 {
+    font-size: var(--tamano-titulo);
+    color: var(--color-primario);
+    margin-bottom: 2%;
+  }
+  
+  #presentacion h3 {
+    font-size: var(--tamano-titulo);
+    color: var(--color-primario);
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  
+  #presentacion h4{
+    font-size: var(--tamano-titulo);
+    color: var(--color-secundario);
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin:2%;
+  }
+
+  #presentacion p {
+    font-size: var(--tamano-parrafo);
+    color: var(--color-secundario);
+    line-height: 1.6;
+    margin-bottom: 10%;
+  }
+  
+  /* Estilos para la lista de datos */
+  .info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .datosIzquierda,
+  .datosDerecha {
+    flex-basis: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+  
+  .datosIzquierda li,
+  .datosDerecha li {
+    font-size: var(--tamano-parrafo);
+    color: black;
+    list-style: none;
+    margin-bottom: 10px;
+  }
+
+/* Estilos para pantallas pequeñas */
+ @media (max-width: 768px) {
+    .datosIzquierda,
+    .datosDerecha {
+      flex-basis: 100%; /* Cambiar a ancho completo en pantallas pequeñas */
+    }
+  }
+
+  /*fin presentacion*/
+  
+/*experiencia estudios*/
+  #experienciaEstudios {
+    background: url("../img/img-ex-grande.png");
+    width: 100%;
+    position: relative; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+    text-align: center;
+    padding: 5%;
+  }
+  
+  #experienciaEstudios h2 {
+    font-size: var(--tamano-titulo); /* Tamaño del título */
+    color:white; /* Color del título */
+    padding-bottom: 2%;
+  }
+
+  #experienciaEstudios h3 {
+    font-size: var(--tamano-titulo); /* Tamaño del título */
+    color: white; /* Color del título */
+  }
+  
+  #experienciaEstudios p.expEstu {
+    font-size: var(--tamano-parrafo); /* Tamaño del párrafo */
+    color: white; /* Color del párrafo */
+    padding-bottom: 5%;
+  }
+  
+  .accordion-button.collapsed {
+    background-color: #373b3e; /* Color de fondo rojo */
+    color: white; /* Color de texto blanco */
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color:#000000; /* Color de fondo rojo */
+    color: white; /* Color de texto blanco */
+  }
+  /*fin experiencia estudios */
+
+  /*diplomas*/
+
+  #diplomas h2{
+    font-size: var(--tamano-titulo); /* Tamaño del párrafo */
+    color: var(--color-primario); 
+    padding: 5%;
+    
+  }
+
+  #diplomas img{
+    transition: transform 0.5s; 
+  }
+
+  #diplomas img:Hover{
+    transform: scale(1.2); 
+  }
+
+  /*fin diplomas*/
+
+  /*habilidades*/
+
+  #habilidades{
+    background: rgb(57,57,60);
+    background: linear-gradient(90deg, rgba(57,57,60,1) 0%, rgba(113,113,113,1) 5%, rgba(44,44,45,1) 48%, rgba(44,44,45,1) 57%, rgba(78,82,83,1) 100%);
+    text-align: center;
+
+  }
+
+  #habilidades h2{
+    padding-bottom: 5%;
+    color: var(--color-primario);
+  }
+  #habilidades img{
+    animation: girar 5s; 
+    transition: transform 0.5s; 
+
+  }
+  
+  #habilidades img:hover{
+    transform: scale(1.2); 
+
+  }
+
+  .progress-red {
+    background-color: red;
+    /* Otros estilos opcionales */
+  }
+  /*fin habilidades*/
+
+  @keyframes girar {
+    from {
+      transform: rotate(0deg); /* Comienza sin rotación */
+    }
+    to {
+      transform: rotate(360deg); /* Termina con una rotación completa de 360 grados */
+    }
+  }
+    #habilidades h4{
+        color: white;
+        font-size: var(--tamano-parrafo);
+ }
+
+ #proyectos{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: center;
+
+ }
+ 
+ #proyectos h2{
+    color: var(--color-primario);
+    font-size: var(--tamano-titulo);
+
+ }
+
+ #proyectos p{
+    color: var(--color-secundario);
+    font-size: var(--tamano-parrafo);
+    padding-bottom: 5%;
+ }
+
+
+
+/*Contacto*/
+
+/*footer iconos*/
+
+.iconosF img{
+    width: 40px;
+    height: 40px;
+    margin: 0 20px; 
+
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 880px) {
+  
+  #experienciaEstudios{
+  background: url("../img/imagen-exp-celular.png");
+  position: relative; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+
+  
+}
